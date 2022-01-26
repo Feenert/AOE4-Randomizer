@@ -1,0 +1,74 @@
+body {
+    background-image: url(./images/randomizer-background.png);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 350px;
+    height: 197px;
+}
+
+#options {
+    /* align lists to start and end*/
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#content{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.teamOne, .teamTwo, #map{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+ul {
+    display: flex;
+    align-content: space-between;
+    margin: 0px;
+    text-align: center;
+    list-style-type: none;
+}
+li {
+    color: white;
+
+}
+
+h2{
+    color: white;
+}
+
+#map-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#players #maps{
+    display: flex;
+    align-content: space-between;
+    width: 40%;
+    gap: 5%;
+}
+
+.flex-items{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+button {
+    font-size: 24px;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: #d3aa00;
+}

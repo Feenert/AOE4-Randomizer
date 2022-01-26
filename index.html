@@ -3,12 +3,52 @@
     <head>
         <title>Age of Empires Randomizer</title>
         <meta charset="UTF-8">
-        <script type="text/javascript" src="whileLoop.js"></script>
-        <link rel="stylesheet" src="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
 
     <body>
+        <div id='options'>
+            <ul id='players'>
+                <li class="flex-items"><input type="radio" name="teamSize">1v1</li>
+                <li class="flex-items"><input type="radio" name="teamSize">2v2</li>
+                <li class="flex-items"><input type="radio" name="teamSize">3v3</li>
+                <li class="flex-items"><input type="radio" name="teamSize">4v4</li>
+            </ul>
+
+
+            <ul id='maps'>
+                <li class="flex-items"><input type="radio" name="mapType">All</li>
+                <li class="flex-items"><input type="radio" name="mapType">Land</li>
+                <li class="flex-items"><input type="radio" name="mapType">Hybrid</li>
+                <li class="flex-items"><input type="radio" name="mapType">Land & Hybrid</li>
+                <li class="flex-items"><input type="radio" name="mapType">Water</li>
+            </ul>
+
+            <button>Randomize</button>
+        </div>
+        <div id='content'>
+            <ul class="teamOne">
+                <li><h2>Team One</h2></li>
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+            </ul>
+
+            <ul class="teamTwo">
+                <li><h2>Team One</h2></li>
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+                <img src="./images/placeholder.png">
+            </ul>
+            <div id='map-column'>
+                <h2>Map</h2>
+                <img id="map" src="./images/placeholder.png">
+            </div>
+        </div>
 
     </body>
 
