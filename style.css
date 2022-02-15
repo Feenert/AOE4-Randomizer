@@ -3,10 +3,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-img{
+/* #map{
     width: 350px;
     height: 197px;
-}
+} */
 
 #options {
     /* align lists to start and end*/
@@ -24,9 +24,10 @@ img{
     margin-top: 0%;
 }
 
-.teamOne, .teamTwo, #map{
+.teamOne, .teamTwo, #map-column{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 5%;
     padding-top: 2%;
 }
@@ -38,22 +39,18 @@ ul {
     text-align: center;
     list-style-type: none;
 }
-li {
+li, h2 {
     color: white;
 
 }
 
-h2{
-    color: white;
-}
-
-#map-column{
+/* #map-column{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-#players #maps{
+#players{
     display: flex;
     align-content: space-between;
     width: 40%;
@@ -71,4 +68,10 @@ button {
     margin-left: 3%;
     margin-top: 3%;
     background-color: #d3aa00;
+}
+
+span {
+    background-image: url(./images/placeholder.png);
+    width: 350px;
+    height: 197px;
 }

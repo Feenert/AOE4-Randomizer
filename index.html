@@ -11,42 +11,42 @@
     <body>
         <div id='options'>
             <ul id='players'>
-                <li class="flex-items"><input type="radio" name="teamSize">1v1</li>
-                <li class="flex-items"><input type="radio" name="teamSize">2v2</li>
-                <li class="flex-items"><input type="radio" name="teamSize">3v3</li>
-                <li class="flex-items"><input type="radio" name="teamSize">4v4</li>
+                <li class="flex-items"><input type="radio" value='1' name="teamSize">1v1</li>
+                <li class="flex-items"><input type="radio" value='2' name="teamSize">2v2</li>
+                <li class="flex-items"><input type="radio" value='3' name="teamSize">3v3</li>
+                <li class="flex-items"><input type="radio" value='4' name="teamSize">4v4</li>
             </ul>
 
 
             <ul id='maps'>
-                <li class="flex-items"><input type="radio" name="mapType">All</li>
-                <li class="flex-items"><input type="radio" name="mapType">Land</li>
-                <li class="flex-items"><input type="radio" name="mapType">Hybrid</li>
-                <li class="flex-items"><input type="radio" name="mapType">Land & Hybrid</li>
-                <li class="flex-items"><input type="radio" name="mapType">Water</li>
+                <li class="flex-items"><input type="radio" value="1" name="mapType">All</li>
+                <li class="flex-items"><input type="radio" value='2' name="mapType">Land</li>
+                <li class="flex-items"><input type="radio" value='3' name="mapType">Hybrid</li>
+                <li class="flex-items"><input type="radio" value="4" name="mapType">Land & Hybrid</li>
+                <li class="flex-items"><input type="radio" value="5" name="mapType">Water</li>
             </ul>
 
-            <button>Randomize</button>
+            <button type="button" onclick="randomAll()">Randomize</button>
         </div>
         <div id='content'>
             <ul class="teamOne">
                 <li><h2>Team One</h2></li>
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
+                <span id="result1"></span>
+                <span id="result2"></span>
+                <span id="result3"></span>
+                <span id="result4"></span>
             </ul>
 
             <ul class="teamTwo">
-                <li><h2>Team One</h2></li>
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
-                <img src="./images/placeholder.png">
+                <li><h2>Team Two</h2></li>
+                <span id="result5"></span>
+                <span id="result6"></span>
+                <span id="result7"></span>
+                <span id="result8"></span>            
             </ul>
             <div id='map-column'>
                 <h2>Map</h2>
-                <img id="map" src="./images/placeholder.png">
+                <span id="map"></span>
             </div>
         </div>
 
